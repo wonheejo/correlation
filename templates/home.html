@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Python button script</title>
+</head>
+<body>
+    <h1> Correlation Matrix 1</h1>
+    <button onclick="location.href='{% url 'script' %}'">Exceute Script</button><hr>
+    <h2> Correlation Matrix 2</h2>
+    {% if data %}
+    {{data | safe}}
+    {% endif %}
+    <div><img src="matrix.png" alt="Matrix"/>
+    </div>
+</body>
+</html>
